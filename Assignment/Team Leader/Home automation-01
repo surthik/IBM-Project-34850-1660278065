@@ -43,9 +43,10 @@ void loop() {
    Serial.print("cm");
    Serial.println();
    delay(100);
-   if (cm==50)
+   if (cm<=50)
    {
     digitalWrite(buzzer,HIGH);
+    delay(2000);
    }
    else
    {
