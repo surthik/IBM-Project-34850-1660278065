@@ -1,0 +1,28 @@
+# IBM-Project-34850-1660278065
+Smart Waste Management System For Metropolitan Cities
+int sensor=6;
+int val=0;
+void setup ()
+{
+  Pin Mode (6, INPUT);
+  Pin Mode (13, OUTPUT);
+  Pin Mode (11, OUTPUT);
+  Serial. begin (9600);
+}
+
+void loop ()
+{
+  Val = digital Read (sensor);
+  If ( val ==HIGH)
+  {
+    Digital Write (13, HIGH);
+    Tone (11,50);
+    Delay (200);
+  }    
+  else
+  {
+    Digital Write (13, LOW);
+    No Tone (11);
+    Delay (1000);
+  }
+}
